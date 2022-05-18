@@ -1,0 +1,22 @@
+GET vs. POST
+Both GET and POST create an array
+$_GET passed to the current script via the URL parameters.
+$_POST passed to the current script via the HTTP POST method.
+GET
+visible to everyone
+2000 character limit
+used for sending insensitve data
+
+POST
+invisible to others
+no limits
+
+UPLOAD FILES IN DATABASE
+input type="file"
+move_uploaded_file(file,dest);
+In form use enctype="multipart/form-data";
+
+
+serial number
+update value
+delete warning

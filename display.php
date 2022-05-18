@@ -30,11 +30,13 @@
                  $query = mysqli_query($con,$q);
   
                  while($res = mysqli_fetch_array($query)){
+                    $file = $res['file'];
+                    $name = $res['fname'];
 
                 ?>
                 <tr class="text-primary text-center">
-                    <td><?php echo $res['fname'] ?></td>
-                    <td><?php echo $res['file'] ?></td>
+                    <td><?php echo $name ?></td>
+                    <td><button class="btn btn-link"><a href="view.php?id=<?php echo $res['id'];?>">Link</a></button></td>
                     <td><button class="btn btn-dark"><a href="delete.php?id=<?php echo $res['id'];?>">Delete</a></button></td>
                 </tr>
 
