@@ -13,7 +13,12 @@ while($row = $result->fetch_object()){
 
 echo '<h1>Here is your document</h1>';
 echo '<strong>File Name : </strong>'.$pdf;
+
+// header('Content-type: application/pdf'||'Content-type: text/html'); 
+// header('Content-Disposition: inline; filename="' .$pdf. '"'); 
+// @readfile($pdf);  
 ?>
 <br/><br/>
+
 <iframe src="<?php echo $pdf; ?>" width="90%" height="500px">
 </iframe>

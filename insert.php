@@ -22,7 +22,7 @@ if(isset($_POST['save'])){
     $fileext = explode('.',$filename);
     $filecheck = strtolower(end($fileext));
 
-    $fileextstored = array('doc','txt','pdf');
+    $fileextstored = array('doc','txt','pdf' , 'jpg' , 'png' , 'jpeg' );
 
     if(in_array($filecheck,$fileextstored)){
         $destinationfile = 'upload/'.$filename;
@@ -31,6 +31,7 @@ if(isset($_POST['save'])){
         $q = "INSERT INTO `docworld`(`fname`, `file`) VALUES ('$filename','$destinationfile')";
 
         $query = mysqli_query($con,$q);
+
     }
 
 }
@@ -48,13 +49,11 @@ if(isset($_POST['save'])){
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
   />
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
   <div class="container" >
-      <form class="form" name="docform" method="post" enctype="multipart/form-data" action="#">
+      <form class="form" name="docform" method="post" onsubmit="return handlesubmit()" enctype="multipart/form-data" action="#">
         <div>
             <br><h1>Welcome to Docworld</h1><br>
             <h3>Hello <?php echo $_SESSION['user'];                                                                                                                                                    ?></h3>
@@ -68,4 +67,25 @@ if(isset($_POST['save'])){
   </div>
     
 </body>
+<script>
+  function handlesubmit(){
+    var fname = document.getElementById('fname').value;
+    var file = document.getElementById('file').value;
+
+    if(fname==""){
+     alert('file name cannot be blank');
+     return false;
+    } 
+    if(file){
+      alert('succesfully uploaded');
+    } else {
+      alert('please choose a file');
+      return false;
+    }
+    }
+  
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </html>

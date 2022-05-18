@@ -19,8 +19,7 @@
             <Br><h1 class="text-center text-primary">YOUR LIBRARY</h1><br>
             <table class="table table-striped table-hover table-bordered">
                 <tr class="text-center">
-                    <th>file name</th>
-                    <th>files</th>
+                    <th>FILES</th>
                     <th>DELETE</th>
                 </tr>
                 <?php
@@ -35,9 +34,8 @@
 
                 ?>
                 <tr class="text-primary text-center">
-                    <td><?php echo $name ?></td>
-                    <td><button class="btn btn-link"><a href="view.php?id=<?php echo $res['id'];?>">Link</a></button></td>
-                    <td><button class="btn btn-dark"><a href="delete.php?id=<?php echo $res['id'];?>">Delete</a></button></td>
+                    <td><button class="btn btn-link"><a href="view.php?id=<?php echo $res['id'];?>"><?php echo $name ?></a></button></td>
+                    <td><button onclick="return handledelete();" class="btn btn-dark"><a href="delete.php?id=<?php echo $res['id'];?>">Delete</a></button></td>
                 </tr>
 
                 <?php
@@ -47,6 +45,11 @@
             <button class="btn btn-dark" ><a href="insert.php">ADD</a></button>
         </div>
     </div>
+    <script>
+        function handledelete(){
+            return confirm('Are you sure ?');
+        }
+        </script>
     
 </body>
 </html>
