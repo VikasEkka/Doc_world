@@ -28,7 +28,7 @@ if(isset($_POST['save'])){
         $destinationfile = 'upload/'.$filename;
         move_uploaded_file($filetmp,$destinationfile);
 
-        $q = "INSERT INTO `docworld`(`fname`, `file`) VALUES ('$filename','$destinationfile')";
+        $q = "INSERT INTO `docworld`(`fname`, `file`) VALUES ('$fname','$destinationfile')";
 
         $query = mysqli_query($con,$q);
 
@@ -38,26 +38,36 @@ if(isset($_POST['save'])){
 
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Docworld</title>
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-  />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
+    <title>UPLOAD</title>
 </head>
 <body>
-  <div class="container-fluid" >
+
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="home.php">DOCWORLD</a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
+              </ul>
+            </div>
+          </nav>
+
+
+          <div class="container" >
       <form class="form" name="docform" method="post" onsubmit="return handlesubmit()" enctype="multipart/form-data" action="#">
-        <div>
-            <br><h1 class="bg-dark text-primary text-center">Welcome to Docworld</h1><br>
-            <h3 class="text-info">Hello <?php echo $_SESSION['user'] ;?> upload your file</h3>                                                                                                                                                   ?></h3>
-            <label>File Name :</label><br>
+        <div class="justify-content-center d-flex align-items-center">
+            <h3 class="text-info">Upload Your Document</h3>                                                                                                                                                   
+            <label>File Title :</label><br>
             <input type="text" name="fname" id="fname"><br><br>
             <input  name="file" id="file" type="file"><br>
             <br><button class="btn btn-warning" type="submit" name="save">Upload</button><br>
@@ -85,7 +95,13 @@ if(isset($_POST['save'])){
     }
   
   </script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+                    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</body>
 </html>

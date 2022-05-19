@@ -13,7 +13,7 @@
 <nav class="navbar navbar-inverse">
             <div class="container-fluid">
               <div class="navbar-header">
-                <a class="navbar-brand" href="home.php">DOCWORLD</a>
+                <a class="navbar-brand" href="#">DOCWORLD</a>
               </div>
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
@@ -30,28 +30,3 @@
     
 </body>
 </html>
-
-<?php
-
-include 'conn.php';
-
-$id = $_GET['id'];
-
-$select = "SELECT * FROM `docworld` WHERE id = $id";
-$result = $con->query($select);
-while($row = $result->fetch_object()){
-  $pdf = $row->file;
-  $name = $row->fname;
-}
-
-echo '<strong>File Name : </strong>'.$name;
-
-// header('Content-type: application/pdf'||'Content-type: text/html'); 
-// header('Content-Disposition: inline; filename="' .$pdf. '"'); 
-// @readfile($pdf);  
-?>
-<br/><br/>
-
-<iframe src="<?php echo $pdf; ?>" width="90%" height="500px">
-</iframe>
-

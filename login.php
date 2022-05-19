@@ -33,7 +33,7 @@ if(isset($_POST['submit'])){
 
          if($pass===$dbpass){
              echo "login successful";
-             header('location:home.html');
+             header('location:home.php');
          } else {
              echo "password incorrect";
          }

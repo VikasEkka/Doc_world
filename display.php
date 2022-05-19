@@ -13,39 +13,31 @@ if(!$_SESSION['user']){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
     <title>LIBRARY</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<div class="container">
 
-    <div class="row row-cols-1">
-
-    <div class="col">
-        <!-- <nav class="navbar navbar-inverse" >
+<nav class="navbar navbar-inverse">
             <div class="container-fluid">
               <div class="navbar-header">
-                <a class="navbar-brand" href="home.html">DOCWORLD</a>
+                <a class="navbar-brand" href="home.php">DOCWORLD</a>
               </div>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="regis.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
               </ul>
             </div>
-        </nav> -->
-        </div>
-  
-        <div class="col">
-            <Br><h1 class="text-center text-primary bg-dark ">LIBRARY</h1><br>
+          </nav>
+
+
+          <div class="container">
             <table class="table table-striped table-hover table-bordered">
-                <tr class="text-center">
-                    <th>FILES</th>
+                <tr class="text-center" style=" text-align : center !important">
+                    <th>
+                        <span> FILES </span>
+                        <button >+</button>
+                    </th>
                     <th>DELETE</th>
                 </tr>
                 <?php
@@ -68,19 +60,22 @@ if(!$_SESSION['user']){
                  }
                     ?>
             </table>
-            <button class="btn btn-dark" ><a href="insert.php">ADD</a></button>
+            <button class="btn btn-info" ><a href="insert.php">ADD</a></button>
         </div>
 
-    </div>
 
-</div>
-
-
-    <script>
+        <script>
         function handledelete(){
             return confirm('Are you sure ?');
         }
         </script>
+
+
+                    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
 </body>
 </html>
