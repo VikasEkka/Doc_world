@@ -16,8 +16,8 @@ include 'conn.php';
   //$q = mysqli_query($con,$sql);
 
   if($con->query($sql) === TRUE){
-      echo "succesfully created";
-  }else {
+    header('location:login.php');
+  } else {
       echo "ERROR ".$sql.'<br>'.$con->error;
   }
   $con->close();

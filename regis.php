@@ -13,7 +13,7 @@
 
 <body>
     <div class="container"><br />
-        <h1 class="text-primary text-center">Welcome to DOCWORLD</h1><br />
+        <h1 class="text-primary text-center bg-dark">Welcome to DOCWORLD</h1><br />
         <div class="col-lg-8 m-auto d-block" >
             <form action="regis_nxt.php" onsubmit="return validation()" class="bg-light" method='POST'>
                 <div class="form-group">
@@ -31,7 +31,7 @@
 
                 <div class="form-group">
                     <label>confirm Password :</label>
-                    <input type="text" name="cpass" class="form-control" id="cpass" />
+                    <input type="password" name="cpass" class="form-control" id="cpass" />
                 </div>
                 <span id="cpasswords" class="text-danger font-weight-bold"></span>
 
@@ -142,7 +142,7 @@
                 document.getElementById('emailid').innerHTML="**Invalid Format" ;
                 return false;
             }else {
-               alert('submitted')
+               alert('submitted');
 
             }
         }

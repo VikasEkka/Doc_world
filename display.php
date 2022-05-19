@@ -1,10 +1,19 @@
+<?php
+session_start();
+
+if(!$_SESSION['user']){
+  echo "you are logged out";
+  header('location:login.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>user details</title>
+    <title>LIBRARY</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
@@ -14,9 +23,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="col-lg-12">
-            <Br><h1 class="text-center text-primary">YOUR LIBRARY</h1><br>
+<div class="container">
+
+    <div class="row row-cols-1">
+
+    <div class="col">
+        <!-- <nav class="navbar navbar-inverse" >
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="home.html">DOCWORLD</a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="regis.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+        </nav> -->
+        </div>
+  
+        <div class="col">
+            <Br><h1 class="text-center text-primary bg-dark ">LIBRARY</h1><br>
             <table class="table table-striped table-hover table-bordered">
                 <tr class="text-center">
                     <th>FILES</th>
@@ -44,7 +70,12 @@
             </table>
             <button class="btn btn-dark" ><a href="insert.php">ADD</a></button>
         </div>
+
     </div>
+
+</div>
+
+
     <script>
         function handledelete(){
             return confirm('Are you sure ?');

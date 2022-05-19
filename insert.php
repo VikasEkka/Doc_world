@@ -52,16 +52,16 @@ if(isset($_POST['save'])){
 
 </head>
 <body>
-  <div class="container" >
+  <div class="container-fluid" >
       <form class="form" name="docform" method="post" onsubmit="return handlesubmit()" enctype="multipart/form-data" action="#">
         <div>
-            <br><h1>Welcome to Docworld</h1><br>
-            <h3>Hello <?php echo $_SESSION['user'];                                                                                                                                                    ?></h3>
+            <br><h1 class="bg-dark text-primary text-center">Welcome to Docworld</h1><br>
+            <h3 class="text-info">Hello <?php echo $_SESSION['user'] ;?> upload your file</h3>                                                                                                                                                   ?></h3>
             <label>File Name :</label><br>
             <input type="text" name="fname" id="fname"><br><br>
             <input  name="file" id="file" type="file"><br>
             <br><button class="btn btn-warning" type="submit" name="save">Upload</button><br>
-            <br><button class="btn btn-dark" type="button" name="logout"><a href="logout.php">Log out</a></button>
+            <br><button class="btn btn-dark" type="button" name="logout"><a href="display.php">Go to library</a></button>
         </div>
       </form>
   </div>

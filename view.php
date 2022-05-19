@@ -11,7 +11,7 @@ while($row = $result->fetch_object()){
   $name = $row->fname;
 }
 
-echo '<h1>Here is your document</h1>';
+echo '<h1 style="color: blue">Here is your document</h1>';
 echo '<strong>File Name : </strong>'.$pdf;
 
 // header('Content-type: application/pdf'||'Content-type: text/html'); 

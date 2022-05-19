@@ -7,7 +7,6 @@ session_start();
     <title>Login</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
-
 </head>
 
 <body>
@@ -34,7 +33,7 @@ if(isset($_POST['submit'])){
 
          if($pass===$dbpass){
              echo "login successful";
-             header('location:insert.php');
+             header('location:home.html');
          } else {
              echo "password incorrect";
          }
@@ -45,7 +44,8 @@ if(isset($_POST['submit'])){
 ?>
 
     <div class="container"><br />
-        <h1 class="text-primary text-center">Welcome to DOCWORLD</h1><br />
+
+        <h1 class="text-primary text-center bg-dark">Welcome to DOCWORLD</h1><br />
         <div class="col-lg-8 m-auto d-block" >
             <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" onsubmit="return validation()" class="bg-light" method='POST'>
                 <div class="form-group">

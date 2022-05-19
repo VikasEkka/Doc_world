@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if(!$_SESSION['user']){
+  echo "you are logged out";
+  header('location:home.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>Sidebar</title>
+    <title>HOME</title>
 </head>
 <body>
     <div class="container">
@@ -19,7 +28,7 @@
          <ul>
              <li><a href="display.php"><i class="fa-thin fa-floppy-disk" aria-hidden="true"></i>YOUR LIBRARY</a></li>
              <li><a href="insert.php"><i class="fa-thin fa-floppy-disk" aria-hidden="true"></i>ADD</a></li>
-             <li><a href="#"><i class="fa-regular fa-user-secret"></i></i>Log out</a></li>
+             <li><a href="logout.php"><i class="fa-regular fa-user-secret"></i></i>Log out</a></li>
          </ul>
          
     </div>
