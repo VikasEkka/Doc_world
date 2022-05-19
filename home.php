@@ -42,7 +42,7 @@
 
         <h3 class="card-title">Add documents</h3>
         <p class="card-text">You can add documents to your library here</p>
-        <a href="insert.php" class="btn btn-primary">Upload documents</a>
+        <a href="insert.php" class="btn btn-primary">Upload document</a>
       </div>
     </div>
   </div>

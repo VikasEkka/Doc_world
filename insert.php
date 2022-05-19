@@ -66,7 +66,7 @@ if(isset($_POST['save'])){
           <div class="container" >
       <form class="form" name="docform" method="post" onsubmit="return handlesubmit()" enctype="multipart/form-data" action="#">
         <div class="justify-content-center d-flex align-items-center">
-            <h3 class="text-info">Upload Your Document</h3>                                                                                                                                                   
+            <h2 class="text-info">Upload Your Document</h2>                                                                                                                                                   
             <label>File Title :</label><br>
             <input type="text" name="fname" id="fname"><br><br>
             <input  name="file" id="file" type="file"><br>

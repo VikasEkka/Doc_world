@@ -1,20 +1,29 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Registration</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Sign Up</title>
 </head>
-
 <body>
-    <div class="container"><br />
-        <h1 class="text-primary text-center bg-dark">Welcome to DOCWORLD</h1><br />
-        <div class="col-lg-8 m-auto d-block" >
+
+<nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">DOCWORLD</a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+              <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </nav>
+
+
+          <div class="container"><br />
+        <div class="col-lg-6 m-auto d-block" >
             <form action="regis_nxt.php" onsubmit="return validation()" class="bg-light" method='POST'>
                 <div class="form-group">
                     <label>Username :</label>
@@ -147,6 +156,13 @@
             }
         }
     </script>
-</body>
 
+
+                    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</body>
 </html>

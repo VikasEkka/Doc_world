@@ -36,7 +36,7 @@ if(!$_SESSION['user']){
                 <tr class="text-center" style=" text-align : center !important">
                     <th>
                         <span> FILES </span>
-                        <button >+</button>
+                        <button ><a href="insert.php">+</a></button>
                     </th>
                     <th>DELETE</th>
                 </tr>
@@ -60,7 +60,6 @@ if(!$_SESSION['user']){
                  }
                     ?>
             </table>
-            <button class="btn btn-info" ><a href="insert.php">ADD</a></button>
         </div>
 
 

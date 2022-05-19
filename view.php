@@ -52,6 +52,6 @@ echo '<strong>File Name : </strong>'.$name;
 ?>
 <br/><br/>
 
-<iframe src="<?php echo $pdf; ?>" width="90%" height="500px">
+<iframe src="<?php echo $pdf; ?>" width="100%" height="500px">
 </iframe>
 
