@@ -19,6 +19,8 @@ if(isset($_POST['save'])){
     $fileerror = $files['error'];
     $filetmp = $files['tmp_name'];
 
+$usercurrent = $_SESSION['user'];
+
     $fileext = explode('.',$filename);
     $filecheck = strtolower(end($fileext));
 
@@ -28,7 +30,8 @@ if(isset($_POST['save'])){
         $destinationfile = 'upload/'.$filename;
         move_uploaded_file($filetmp,$destinationfile);
 
-        $q = "INSERT INTO `docworld`(`fname`, `file`) VALUES ('$fname','$destinationfile')";
+
+        $q = "INSERT INTO `docworld`(`user`,`fname`, `file`) VALUES ('$usercurrent','$fname','$destinationfile')";
 
         $query = mysqli_query($con,$q);
 

@@ -43,7 +43,9 @@ if(!$_SESSION['user']){
                 <?php
                 include 'conn.php';
 
-                $q = "SELECT * FROM `docworld`";
+                $usercurrent = $_SESSION['user'];
+                
+                $q = "SELECT * FROM `docworld` WHERE user = '$usercurrent'";
                  $query = mysqli_query($con,$q);
   
                  while($res = mysqli_fetch_array($query)){

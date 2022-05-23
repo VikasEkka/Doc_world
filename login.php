@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -38,11 +39,11 @@ if(isset($_POST['submit'])){
              echo "login successful";
              header('location:home.php');
          } else {
-             echo "password incorrect";
+             echo "<script>alert('incorrect Password');</script>";
          }
      } else {
-         echo "invalid" ;
-     }
+        echo "<script>alert('invalid user');</script>";
+    }
 }
 ?>
 

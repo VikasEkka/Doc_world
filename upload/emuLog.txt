@@ -1,0 +1,363 @@
+
+Loading plugins from W:\New folder\pcsx2\plugins...
+	Bound   GS: GSdx32-AVX2.dll [GSdx 20200506140834 (MSVC 19.25 AVX2/AVX2) 1.2.0]
+	Bound  PAD: LilyPad.dll [LilyPad (20200506140834) 0.12.1]
+	Bound SPU2: Spu2-X.dll [SPU2-X 20200506140834 2.0.0]
+	Bound CDVD: cdvdGigaherz.dll [cdvdGigaherz 20200506140834 0.11.0]
+	Bound  USB: USBnull.dll [USBnull Driver 20200506140834 0.7.0]
+	Bound   FW: FWnull.dll [FWnull Driver 20200506140834 0.7.0]
+	Bound DEV9: DEV9null.dll [DEV9null Driver 20200506140834 0.5.0]
+Plugins loaded successfully.
+
+Initializing plugins...
+	Init GS
+	Init PAD
+	Init SPU2
+	Init CDVD
+	Init USB
+	Init FW
+	Init DEV9
+Plugins initialized successfully.
+
+Bios Found: Europe  v01.60(04/10/2001)  Console
+Bios Found: Europe  v02.00(14/06/2004)  Console
+Bios Found: Japan   v01.00(17/01/2000)  Console
+Bios Found: USA     v01.60(07/02/2002)  Console
+Invalid language identifier (wxID=0)
+Shutting down plugins...
+PCSX2 1.6.0-20200506140834- compiled on May  6 2020
+Savestate version: 0x9a0e0000
+
+Host Machine Init:
+	Operating System =  Microsoft Windows 10 Home (build 19044), 64-bit
+	Physical RAM     =  8107 MB
+	CPU name         =  Intel(R) Core(TM) i3-5005U CPU @ 2.00GHz
+	Vendor/Model     =  GenuineIntel (stepping 04)
+	CPU speed        =  1.999 ghz (4 logical threads)
+	x86PType         =  Standard OEM
+	x86Flags         =  bfebfbff 7ffafbbf
+	x86EFlags        =  2c100000
+
+x86 Features Detected:
+	SSE2.. SSE3.. SSSE3.. SSE4.1.. SSE4.2.. AVX.. AVX2.. FMA
+
+Plugins shutdown successfully.
+Invalid language identifier (wxID=0)
+Reserving memory for recompilers...
+
+Loading plugins from W:\New folder\pcsx2\plugins...
+	Bound   GS: GSdx32-AVX2.dll [GSdx 20200506140834 (MSVC 19.25 AVX2/AVX2) 1.2.0]
+	Bound  PAD: LilyPad.dll [LilyPad (20200506140834) 0.12.1]
+	Bound SPU2: Spu2-X.dll [SPU2-X 20200506140834 2.0.0]
+	Bound CDVD: cdvdGigaherz.dll [cdvdGigaherz 20200506140834 0.11.0]
+	Bound  USB: USBnull.dll [USBnull Driver 20200506140834 0.7.0]
+	Bound   FW: FWnull.dll [FWnull Driver 20200506140834 0.7.0]
+	Bound DEV9: DEV9null.dll [DEV9null Driver 20200506140834 0.5.0]
+Plugins loaded successfully.
+
+(GameDB) 9858 games on record (loaded in 1243ms)
+	HotSwapping to new ISO src image!
+HLE Notice: ELF does not have a path.
+
+Initializing plugins...
+	Init GS
+	Init PAD
+	Init SPU2
+	Init CDVD
+	Init USB
+	Init FW
+	Init DEV9
+Plugins initialized successfully.
+
+Patches: No CRC found, using 00000000 instead.
+Opening plugins...
+	Opening GS
+	Opening PAD
+	Opening SPU2
+Current Renderer: Direct3D 11 (Hardware renderer)
+GSdx Lookup CRC:0
+GSdx Lookup CRC:0
+	Opening CDVD
+isoFile open ok: W:\New folder\Urban Reign (USA).iso
+	Image type  = DVD
+ * CDVD Disk Open: DVD, Single layer or unknown:
+ * * Track 1: Data (Mode 1) (2021936 sectors)
+	Opening USB
+	Opening FW
+	Opening DEV9
+McdSlot 0 [File]: C:\Users\vikas\OneDrive\Documents\PCSX2\memcards\Mcd001.ps2
+(FileMcd) Creating new 8MB memory card: C:\Users\vikas\OneDrive\Documents\PCSX2\memcards\Mcd001.ps2
+McdSlot 1 [File]: C:\Users\vikas\OneDrive\Documents\PCSX2\memcards\Mcd002.ps2
+(FileMcd) Creating new 8MB memory card: C:\Users\vikas\OneDrive\Documents\PCSX2\memcards\Mcd002.ps2
+Plugins opened successfully.
+EE/iR5900-32 Recompiler Reset
+	Bios Found: USA     v01.60(07/02/2002)  Console
+	BIOS rom1 module not found, skipping...
+	BIOS rom2 module not found, skipping...
+	BIOS erom module not found, skipping...
+# Initialize memory (rev:3.63, ctm:196Mhz, cpuclk:147Mhz detected)
+
+PlayStation 2 ======== Hard reset boot
+ ROMGEN=2002-0207, IOP info (CPUID=1f, CACH_CONFIG=0, 2MB, IOP mode)
+ <20020207-164243,ROMconf,PS20160AC20020207.bin:11552>
+# Total accessable memory size: 32 MB (B:2:8:0) (363:2:7c30)
+# TLB spad=0 kernel=1:12 default=13:30 extended=31:38
+# Initialize Start.
+# Initialize GS ...
+# Initialize INTC ...
+# Initialize TIMER ...
+# Initialize DMAC ...
+# Initialize VU1 ...
+# Initialize VIF1 ...
+# Initialize GIF ...
+# Initialize VU0 ...
+# Initialize VIF0 ...
+# Initialize IPU ...
+# Initialize FPU ...
+# Initialize User Memory ...
+# Initialize Scratch Pad ...
+# Initialize Done.
+
+EE DECI2 Manager version 0.06 Feb  7 2002 16:41:20
+  CPUID=2e20, BoardID=0, ROMGEN=2002-0207, 32M
+
+Patches: No CRC found, using 00000000 instead.
+(SYSTEM.CNF) Detected PS2 Disc = cdrom0:\SLUS_212.09;1
+(SYSTEM.CNF) Software version = 1.00
+(SYSTEM.CNF) Disc region type = NTSC
+LilyPad: Warning! No controls are bound to a currently attached device!
+Please attach a controller that has been setup for use with LilyPad or go to the Plugin settings and setup new controls.
+ELF (cdrom0:\SLUS_212.09;1) Game CRC = 0xBDD9BAAD, EntryPoint = 0x00100008
+(SYSTEM.CNF) Detected PS2 Disc = cdrom0:\SLUS_212.09;1
+(SYSTEM.CNF) Software version = 1.00
+(SYSTEM.CNF) Disc region type = NTSC
+
+IOP Realtime Kernel Ver.0.9.1
+    Copyright 1999 (C) Sony Computer Entertainment Inc. 
+Reboot service module.(99/11/10)
+cdvd driver module version 0.1.1 (C)SCEI
+Load File service.(99/11/05)
+Multi Threaded Fileio module.(99/11/15) 
+iop heap service (99/11/03)
+loadelf: fname cdrom0:¥SLUS_212.09;1 secname all
+loadelf version 3.30
+Input ELF format filename = cdrom0:¥SLUS_212.09;1
+1 00100000 0024b52c .....................................
+2 0034b580 003c0520 .............................................................
+Loaded, cdrom0:¥SLUS_212.09;1
+start address 0x100008
+gp address 00000000
+# Restart Without Memory Clear.
+# Initialize GS ...
+# Initialize INTC ...
+# Initialize TIMER ...
+# Initialize DMAC ...
+# Initialize VU1 ...
+# Initialize VIF1 ...
+# Initialize GIF ...
+# Initialize VU0 ...
+# Initialize VIF0 ...
+# Initialize IPU ...
+# Initialize FPU ...
+# Initialize Scratch Pad ...
+# Restart Without Memory Clear Done.
+Elf entry point @ 0x00100008 about to get recompiled. Load patches first.
+Get Reboot Request From EE
+GSdx Lookup CRC:BDD9BAAD
+GSdx Lookup CRC:BDD9BAAD
+ROM directory not found
+
+PlayStation 2 ======== Update rebooting..
+
+PlayStation 2 ======== Update reboot complete
+cdvdman Init
+
+IOP Realtime Kernel Ver. 2.2
+    Copyright 1999-2002 (C) Sony Computer Entertainment Inc. 
+Reboot service module.(99/11/10)
+cdvd driver module version 0.1.1 (C)SCEI
+Load File service.(99/11/05)
+Multi Threaded Fileio module.(99/11/15) 
+iop heap service (99/11/03)
+loadmodule: fname cdrom0:¥IRX¥SIO2MAN.IRX;1 args 0 arg 
+loadmodule: id 25, ret 0
+loadmodule: fname cdrom0:¥IRX¥MTAPMAN.IRX;1 args 0 arg 
+loadmodule: id 26, ret 0
+loadmodule: fname cdrom0:¥IRX¥PADMAN.IRX;1 args 0 arg 
+loadmodule: id 27, ret 0
+loadmodule: fname cdrom0:¥IRX¥MCMAN.IRX;1 args 0 arg 
+loadmodule: id 28, ret 2
+loadmodule: fname cdrom0:¥IRX¥MCSERV.IRX;1 args 0 arg 
+loadmodule: id 29, ret 2
+loadmodule: fname cdrom0:¥IRX¥LIBSD.IRX;1 args 0 arg 
+loadmodule: id 30, ret 0
+loadmodule: fname cdrom0:¥IRX¥SDRDRV.IRX;1 args 0 arg 
+SDR driver version 4.0.1 (C) SCEI
+ Exit rsd_main 
+loadmodule: id 31, ret 2
+loadmodule: fname cdrom0:¥IRX¥NUSOUND.IRX;1 args 0 arg 
+loadmodule: id 32, ret 2
+(UpdateVSyncRate) Mode Changed to NTSC.
+(UpdateVSyncRate) FPS Limit Changed : 59.93 fps
+loadmodule: fname cdrom0:¥IRX¥CRI_ADXI.IRX;1 args 21 arg sdinit=0
+CRI ADX Driver Ver.9.44(Feb 28 2005 19:25:04)
+CRI ADX Driver : sceSdInit Call = 0
+CRI ADX Driver : Main Thread Priority = 39
+CRI ADX Driver : PSM Thread Priority  = 39
+CRI ADX Driver : DTX Thread Priority  = 48
+CRI ADX Driver : SPU CORE Number = 2
+loadmodule: id 33, ret 2
+Closing plugins...
+	Closing DEV9
+	Closing FW
+	Closing USB
+	Closing CDVD
+	Closing SPU2
+	Closing PAD
+	Closing GS
+Plugins closed successfully.
+HLE Notice: ELF does not have a path.
+
+Opening plugins...
+	Opening GS
+	Opening PAD
+	Opening SPU2
+Current Renderer: Direct3D 11 (Hardware renderer)
+GSdx Lookup CRC:BDD9BAAD
+GSdx Lookup CRC:BDD9BAAD
+	Opening CDVD
+isoFile open ok: W:\New folder\Urban Reign (USA).iso
+	Image type  = DVD
+ * CDVD Disk Open: DVD, Single layer or unknown:
+ * * Track 1: Data (Mode 1) (2021936 sectors)
+	Opening USB
+	Opening FW
+	Opening DEV9
+McdSlot 0 [File]: C:\Users\vikas\OneDrive\Documents\PCSX2\memcards\Mcd001.ps2
+McdSlot 1 [File]: C:\Users\vikas\OneDrive\Documents\PCSX2\memcards\Mcd002.ps2
+Plugins opened successfully.
+EE/iR5900-32 Recompiler Reset
+	Bios Found: USA     v01.60(07/02/2002)  Console
+	BIOS rom1 module not found, skipping...
+	BIOS rom2 module not found, skipping...
+	BIOS erom module not found, skipping...
+# Initialize memory (rev:3.63, ctm:393Mhz, cpuclk:295Mhz detected)
+
+PlayStation 2 ======== Hard reset boot
+ ROMGEN=2002-0207, IOP info (CPUID=1f, CACH_CONFIG=0, 2MB, IOP mode)
+ <20020207-164243,ROMconf,PS20160AC20020207.bin:11552>
+# Total accessable memory size: 32 MB (B:2:8:0) (363:2:7c30)
+# TLB spad=0 kernel=1:12 default=13:30 extended=31:38
+# Initialize Start.
+# Initialize GS ...
+# Initialize INTC ...
+# Initialize TIMER ...
+# Initialize DMAC ...
+# Initialize VU1 ...
+# Initialize VIF1 ...
+# Initialize GIF ...
+# Initialize VU0 ...
+# Initialize VIF0 ...
+# Initialize IPU ...
+# Initialize FPU ...
+# Initialize User Memory ...
+# Initialize Scratch Pad ...
+# Initialize Done.
+
+EE DECI2 Manager version 0.06 Feb  7 2002 16:41:20
+  CPUID=2e20, BoardID=0, ROMGEN=2002-0207, 32M
+
+Patches: No CRC found, using 00000000 instead.
+(SYSTEM.CNF) Detected PS2 Disc = cdrom0:\SLUS_212.09;1
+(SYSTEM.CNF) Software version = 1.00
+(SYSTEM.CNF) Disc region type = NTSC
+ELF (cdrom0:\SLUS_212.09;1) Game CRC = 0xBDD9BAAD, EntryPoint = 0x00100008
+(SYSTEM.CNF) Detected PS2 Disc = cdrom0:\SLUS_212.09;1
+(SYSTEM.CNF) Software version = 1.00
+(SYSTEM.CNF) Disc region type = NTSC
+
+IOP Realtime Kernel Ver.0.9.1
+    Copyright 1999 (C) Sony Computer Entertainment Inc. 
+Reboot service module.(99/11/10)
+cdvd driver module version 0.1.1 (C)SCEI
+Load File service.(99/11/05)
+Multi Threaded Fileio module.(99/11/15) 
+iop heap service (99/11/03)
+loadelf: fname cdrom0:¥SLUS_212.09;1 secname all
+loadelf version 3.30
+Input ELF format filename = cdrom0:¥SLUS_212.09;1
+1 00100000 0024b52c .....................................
+2 0034b580 003c0520 .............................................................
+Loaded, cdrom0:¥SLUS_212.09;1
+start address 0x100008
+gp address 00000000
+# Restart Without Memory Clear.
+# Initialize GS ...
+# Initialize INTC ...
+# Initialize TIMER ...
+# Initialize DMAC ...
+# Initialize VU1 ...
+# Initialize VIF1 ...
+# Initialize GIF ...
+# Initialize VU0 ...
+# Initialize VIF0 ...
+# Initialize IPU ...
+# Initialize FPU ...
+# Initialize Scratch Pad ...
+# Restart Without Memory Clear Done.
+Elf entry point @ 0x00100008 about to get recompiled. Load patches first.
+Get Reboot Request From EE
+GSdx Lookup CRC:BDD9BAAD
+GSdx Lookup CRC:BDD9BAAD
+ROM directory not found
+
+PlayStation 2 ======== Update rebooting..
+
+PlayStation 2 ======== Update reboot complete
+cdvdman Init
+
+IOP Realtime Kernel Ver. 2.2
+    Copyright 1999-2002 (C) Sony Computer Entertainment Inc. 
+Reboot service module.(99/11/10)
+cdvd driver module version 0.1.1 (C)SCEI
+Load File service.(99/11/05)
+Multi Threaded Fileio module.(99/11/15) 
+iop heap service (99/11/03)
+loadmodule: fname cdrom0:¥IRX¥SIO2MAN.IRX;1 args 0 arg 
+loadmodule: id 25, ret 0
+loadmodule: fname cdrom0:¥IRX¥MTAPMAN.IRX;1 args 0 arg 
+loadmodule: id 26, ret 0
+loadmodule: fname cdrom0:¥IRX¥PADMAN.IRX;1 args 0 arg 
+loadmodule: id 27, ret 0
+loadmodule: fname cdrom0:¥IRX¥MCMAN.IRX;1 args 0 arg 
+loadmodule: id 28, ret 2
+loadmodule: fname cdrom0:¥IRX¥MCSERV.IRX;1 args 0 arg 
+loadmodule: id 29, ret 2
+loadmodule: fname cdrom0:¥IRX¥LIBSD.IRX;1 args 0 arg 
+loadmodule: id 30, ret 0
+loadmodule: fname cdrom0:¥IRX¥SDRDRV.IRX;1 args 0 arg 
+SDR driver version 4.0.1 (C) SCEI
+ Exit rsd_main 
+loadmodule: id 31, ret 2
+loadmodule: fname cdrom0:¥IRX¥NUSOUND.IRX;1 args 0 arg 
+loadmodule: id 32, ret 2
+loadmodule: fname cdrom0:¥IRX¥CRI_ADXI.IRX;1 args 21 arg sdinit=0
+CRI ADX Driver Ver.9.44(Feb 28 2005 19:25:04)
+CRI ADX Driver : sceSdInit Call = 0
+CRI ADX Driver : Main Thread Priority = 39
+CRI ADX Driver : PSM Thread Priority  = 39
+CRI ADX Driver : DTX Thread Priority  = 48
+CRI ADX Driver : SPU CORE Number = 2
+loadmodule: id 33, ret 2
+Closing plugins...
+	Closing DEV9
+	Closing FW
+	Closing USB
+	Closing CDVD
+	Closing SPU2
+	Closing PAD
+	Closing GS
+Plugins closed successfully.
+Shutting down plugins...
+Plugins shutdown successfully.
+(GameDB) Unloading...

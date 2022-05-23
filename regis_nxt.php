@@ -10,8 +10,12 @@ include 'conn.php';
  $mobile = $_REQUEST['mobile'];
  $email = $_REQUEST['email'];
 
+//  $id = $_GET['id'];
+
  $sql = "INSERT INTO userdetails(user, pass, mobile, email)
   VALUES ('$user', '$pass', '$mobile', '$email')";
+
+  // $sql2 = "INSERT INTO `docworld`(`user_id`) VALUES ('$id')";
 
   //$q = mysqli_query($con,$sql);
 

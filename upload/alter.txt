@@ -1,0 +1,1 @@
+alter table docworld add constraint fk_user foreign key(user_id) references userdetails(id) on delete set null on update set null;
